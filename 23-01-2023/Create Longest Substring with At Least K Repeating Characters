@@ -9,6 +9,6 @@ class Solution {
 			while(j < s.length() && count[s.charAt(j)-'a'] < k) j++;
 			return Math.max(longestSubstring(s.substring(0, i), k), longestSubstring(s.substring(j), k));
 		}
-		return s.length();
+		return s.length();//
 	}
 }
